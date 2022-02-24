@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav id="topnav" class="nav ">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Faq</a>
+        <a href="#">Galary</a>
+        <a href="#" class="icon" onclick="mynavigation()">
+            <i class="fa fa-bars"></i>
+
+        </a>
+
+
+    </nav>
+    <div class="boxes">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+
+    </div>
+    <section id="info">
+        <div class="yt-video">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="form">
+            <form action="" onsubmit="return validate()">
+                <h1>Contact form</h1>
+                <p>
+                    <label for="">Name</label>
+                    <input type="text" name="" id="myname">
+                    <span id="nameErr"></span>
+                </p>
+                <p>
+                    <label for="">Email</label>
+                    <input type="text" name="" id="myemail">
+                    <span id="emailErr"></span>
+
+                </p>
+                <p>
+                    <label for="">Messages</label>
+                    <textarea name="" id="mymsg" rows="10">
+
+                    </textarea>
+                    <span id="msgErr"></span>
+
+                </p>
+               
+
+                    <input type="submit" value="send">
+               
+
+
+            </form>
+        </div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

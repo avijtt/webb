@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav{
+    background-color: #333;
+    overflow: hidden;
+    margin: 1px;
+}
+.nav a{
+    color: white;
+    text-align: center;
+    padding: 16px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.nav a:hover{
+    background-color:#ddd;
+    color: black;
+animation-duration: 0.1ms;}
+.nav a.active{
+    background-color: green;
+    color: wheat;
+}
+.nav .icon{
+    display: none;
+}
+.boxes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+
+}
+.box{
+    width: 32%;
+    background-color: black;
+    min-height: 400px;
+    margin-top: 20px;
+
+}
+#info{
+    width: 100%;
+    background-color: teal;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+
+}
+.yt-video{
+    width: 50%;
+    padding: 20px;
+}
+.form{
+    width: 45%;
+   
+}
+.form h1{
+text-align: center;
+margin: 3px 0 0 0;
+}
+.form label{
+    margin: 2px 0;
+    display: block;
+}
+.form input , .form textarea{
+    padding: 7px 3px;
+    width: 100%;
+    margin: 5px;
+}
+.form span{
+    color: red;
+    
+}
+
+
+@media screen and (max-width: 600px)
+{
+    body {
+        background-color: rgb(180, 188, 190);
+      }
+    .nav a:not(:first-child){
+        display: none;
+    }
+    .nav a.icon{
+        float: right;
+        display: block;
+        
+    }
+    .nav.responsive{
+        position: relative;
+    }
+    .nav.responsive a{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+    .nav.responsive a.icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .boxes{
+        flex-direction: column;
+        margin: 0%;
+    }
+    .box{
+       width: 100%;
+    }
+  
+}
+
+
+
+
+
+
